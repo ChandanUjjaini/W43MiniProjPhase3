@@ -6,8 +6,13 @@ using System;
 string[] Prodcode = new string[0];
 int index = 0;
 
+Console.WriteLine("--------------------------------------------------------------");
+Console.WriteLine("Enter product code | Type exit to stop entering product code");
+Console.WriteLine("--------------------------------------------------------------");
+
 while (true)
 {
+    
     Console.Write("Enter Product Code:");
     String data = Console.ReadLine(); //Reading product code
     if (data.ToLower().Trim() == "exit") //Checking to exit loop,based on multiple possiblities of "exit" Format
